@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Google Advanced Search</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 20px;
+            line-height: 1.6;
+        }
+
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+        }
+
+        label {
+            display: block;
+            font-weight: bold;
+            margin-top: 10px;
+        }
+
+        input,
+        select,
+        button {
+            width: 100%;
+            padding: 10px;
+            margin-top: 5px;
+            font-size: 16px;
+        }
+
+        button {
+            background-color: #4285F4;
+            color: white;
+            border: none;
+            cursor: pointer;
+        }
+
+        button:hover {
+            background-color: #357ae8;
+        }
+    </style>
+</head>
+
+<body>
+    <h1>Google Advanced Search</h1>
+    <form action="https://www.google.com/search" method="get" target="_blank">
+        <label for="as_q">All these words:</label>
+        <input type="text" id="as_q" name="as_q" placeholder="e.g., python programming">
+
+        <label for="as_epq">This exact phrase:</label>
+        <input type="text" id="as_epq" name="as_epq" placeholder="e.g., artificial intelligence">
+
+        <label for="as_oq">Any of these words:</label>
+        <input type="text" id="as_oq" name="as_oq" placeholder="e.g., Java OR C++">
+
+        <label for="as_eq">None of these words:</label>
+        <input type="text" id="as_eq" name="as_eq" placeholder="e.g., beginner">
+
+        <button type="submit">Search</button>
+    </form>
+</body>
+
+</html>
